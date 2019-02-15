@@ -9,6 +9,7 @@ public class B2441 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        sc.close();
         for (int i = 0; i < n; i += 1) {
             for (int j = 0; j < n; j += 1) {
                 if (i > j) {

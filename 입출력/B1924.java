@@ -18,6 +18,7 @@ public class B1924 {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int y = sc.nextInt();
+        sc.close();
         int afterDay = 0;
         for(int i=1; i<x; i+=1) {
             afterDay += monthDays[i];   //지난 달들 날짜수 모두 더하기
