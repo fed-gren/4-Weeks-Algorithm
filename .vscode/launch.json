@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
 
+
         {
             "type": "java",
             "name": "Debug (Launch) - Current File",
@@ -16,7 +17,7 @@
             "type": "java",
             "name": "Debug (Launch) - Current File2",
             "request": "launch",
-            "mainClass": "B1463",
+            "mainClass": "B1110",
             "console": "externalTerminal"
         },
     ]
