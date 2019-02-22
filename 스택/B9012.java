@@ -1,39 +1,70 @@
+import java.util.Arrays;
 import java.util.Scanner;
-import java.util.Stack;
 
 /**
  * B9012
  */
 public class B9012 {
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int tc = sc.nextInt();
-        for (int n = 0; n < tc; n += 1) {
+        Loop:for(int i=0; i<tc; i+=1) {
+            Stack9012 s = new Stack9012();
             String str = sc.next();
             String[] arrStr = str.split("");
             int strLen = arrStr.length;
-            if(strLen % 2 != 0) {
-                System.out.println("NO");
-                continue;
-            }
-            Stack<Integer> s = new Stack<Integer>();
-            for (int i = 0; i < strLen; i += 1) {
-                if (arrStr[i].equals("(")) {
+            s.create(strLen);
+            for(int j=0; j<strLen; j+=1) {
+                if(arrStr[j].equals("(")) {
                     s.push(1);
                 } else {
-                    try {
-                        s.pop();
-                    } catch (Exception e) {
-                        // TODO: handle exception
+                    if(!s.pop()) {
                         System.out.println("NO");
-                        break;
+                        continue Loop;
                     }
                 }
             }
-            if(s.size() == 0) System.out.println("YES");
-            else System.out.println("NO");
+            if(!s.empty()) {
+                System.out.println("NO");
+            } else {
+                System.out.println("YES");
+            }
         }
-        sc.close();
+    }
+}
+
+class Stack9012 {
+    int sSize;
+    int len;
+    int[] s;
+    void create(int size) {
+        sSize = size;
+        len = 0;
+        s = new int[size];
+    }
+
+    void push(int data) {
+        if(len >= sSize) {
+            return;
+        }
+        s[len] = data;
+        len += 1;
+    }
+
+    boolean pop() {
+        if(len <= 0) {
+            return false;
+        }
+        s[len-1] = 0;
+        len -= 1;
+        return true;
+    }
+
+    boolean empty() {
+        if(len <= 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
