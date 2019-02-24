@@ -6,80 +6,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - B1427",
-            "request": "launch",
-            "mainClass": "B1427",
-            "projectName": "분류없음"
-        },
-        {
-            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}",
-            "console": "externalTerminal"
+            "console": "externalTerminal",
         },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-B10039<분류없음>",
-            "request": "launch",
-            "mainClass": "B10039",
-            "projectName": "분류없음"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-B10809<분류없음>",
-            "request": "launch",
-            "mainClass": "B10809",
-            "projectName": "분류없음"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-B1110<분류없음>",
-            "request": "launch",
-            "mainClass": "B1110",
-            "projectName": "분류없음"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-B1152<분류없음>",
-            "request": "launch",
-            "mainClass": "B1152",
-            "projectName": "분류없음"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-B11654<분류없음>",
-            "request": "launch",
-            "mainClass": "B11654",
-            "projectName": "분류없음"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-B1546<분류없음>",
-            "request": "launch",
-            "mainClass": "B1546",
-            "projectName": "분류없음"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-B2577<분류없음>",
-            "request": "launch",
-            "mainClass": "B2577",
-            "projectName": "분류없음"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-B2750<분류없음>",
-            "request": "launch",
-            "mainClass": "B2750",
-            "projectName": "분류없음"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-B4344<분류없음>",
-            "request": "launch",
-            "mainClass": "B4344",
-            "projectName": "분류없음"
-        }
     ]
 }
